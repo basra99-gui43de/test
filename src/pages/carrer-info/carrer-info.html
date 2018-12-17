@@ -1,0 +1,33 @@
+<ion-header >
+
+  <ion-navbar color="dark_blue">
+    <ion-title>التفاصيل</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="bg_img" >
+  <div *ngFor=" let item of myCarrerInfo">
+  <div *ngIf="item.id === id">
+    <div style="height:300px;">
+          <img class="logo_img" src="https://www.pixeltech-iq.com/{{item.image}}">
+    </div>
+<div class="address cont">
+ <h6><ion-icon class="my_icon" name="pin"></ion-icon>{{item.location}}</h6>
+</div>
+
+<div class="phone cont" (click)="call(item.phone_number)">
+  <ion-grid>
+      <ion-row>
+        <ion-col col-6><h6><ion-icon class="my_icon" name="phone-portrait"></ion-icon>{{item.phone_number}} </h6></ion-col>
+   
+      </ion-row>
+    </ion-grid>
+  </div>
+</div>
+</div>
+
+
+
+</ion-content>

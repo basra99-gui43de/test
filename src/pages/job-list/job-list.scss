@@ -1,0 +1,71 @@
+page-job-list {
+
+     .cont{
+        padding: 16% 0%;
+     }
+
+     .searchbar-ios-cancel {
+      .button-inner{
+          display: none;
+      }
+      
+  }
+  
+  .cont_div{
+    background-color: #fff;
+    padding: 3% 1%;
+    position: relative;
+    margin: 2% 0%;
+  }
+  p.c_name {
+    position: absolute;
+    z-index: 99;
+    margin: 1% 4%;
+    color: #192f60;
+    
+}
+  p.c_tit {
+    position: absolute;
+    z-index: 99;
+    margin: 1% 44% 1% 0%;
+    color: #ffef00;
+}
+  p.age_tit {
+    position: absolute;
+    z-index: 99;
+    margin: 1% 6%;
+    color: #ffef00;
+}
+  p.age {
+    position: absolute;
+    z-index: 99;
+    margin: 1% 44% 1% 0%;
+    color: #192f60;
+}
+  p.stu_tit {
+    position: absolute;
+    z-index: 99;
+    margin: 1% 4%;
+    color: #ffef00;
+}
+  p.stu {
+    position: absolute;
+    z-index: 99;
+   margin: 1% 44% 1% 0%;
+    color: #192f60;
+}
+  p.contact_tit {
+    position: absolute;
+    z-index: 99;
+    margin: 1% 6%;
+    color: #ffef00;
+}
+  p.contact {
+    position: absolute;
+    z-index: 99;
+    margin: 1% 44% 1% 0%;
+    color: #192f60;
+    font-size: small;
+}
+
+}

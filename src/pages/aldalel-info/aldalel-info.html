@@ -1,0 +1,56 @@
+<ion-header >
+
+  <ion-navbar color="dark_blue">
+    <ion-title>التفاصيل</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+  <div *ngFor=" let item of myDetails |filter:term; let i = index ">
+  <div >
+      <div style="height:250px;  margin-bottom: 40px;">
+        <img class="logo_img" src="https://www.pixeltech-iq.com/{{item.image}}">
+    </div>
+
+<div class="cont">
+  <ion-icon class="my_icon" name="home"></ion-icon>
+  <div class="my_card">
+    <p>{{company_name}}</p>
+  </div>
+</div>
+<div class="cont">
+  <ion-icon class="my_icon" name="mail"></ion-icon>
+  <div class="my_card">
+    <p>{{item.email}}</p>
+  </div>
+</div>
+<div class="cont" (click)="call(item.phone_number)">
+  <ion-icon class="my_icon" name="call"></ion-icon>
+  <div class="my_card">
+    <p>{{item.phone_number}}</p>
+  </div>
+</div>
+<div class="cont">
+  <ion-icon class="my_icon" name="navigate"></ion-icon>
+  <div class="my_card">
+    <p>{{item.location}}</p>
+  </div>
+</div>
+<div class="cont">
+    <ion-icon class="my_icon" name="information-circle"></ion-icon>
+    <div class="my_card">
+      <p>{{item.website}}</p>
+    </div>
+  </div>
+<div class="cont">
+  <div class="my_card2"  (click)="Map()">
+    
+    <p>الموقع على الخريطة</p>
+  </div>
+</div>
+
+</div>
+</div>
+</ion-content>

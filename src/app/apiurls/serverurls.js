@@ -1,0 +1,1 @@
+export const apiKey = 'http://dalel.pixeltech-iq.com/'

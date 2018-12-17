@@ -1,0 +1,7 @@
+{
+  "name": "dalel",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

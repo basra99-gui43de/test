@@ -1,0 +1,16 @@
+
+<ion-header>
+
+
+</ion-header>
+
+
+<ion-content padding class="bg_img">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4 *ngFor="let item of d">
+         <img class="home_img" (click)="list(item)" src="./assets/imgs/aldalel/{{item}}.png">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
